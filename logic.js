@@ -23,6 +23,7 @@ function show(json) {
         /*let newelm = document.createElement('li');
         newelm.textContent=elm.title;
         ul.appendChild(newelm);*/
+        
         let temp = document.querySelector(".section-template").content;
         let clone = temp.cloneNode(true);
         clone.querySelector('.section-name').textContent = elm;
