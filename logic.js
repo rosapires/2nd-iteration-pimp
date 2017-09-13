@@ -2,7 +2,7 @@ let main = document.querySelector("main");
 let template = document.querySelector('.product-template');
 let article = document.querySelector("article");
 
-const colors = ['pink', 'tomato', 'deepskyblue', 'yellow', 'lightgrey'];
+const colors = ['chartreuse', 'tomato', 'deepskyblue', 'yellow', 'lightgrey'];
 
 let LEGHT = 0;
 let animationOccurance = 0;
