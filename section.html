@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="stylesec.css">
+</head>
+
+<body>
+    <main class="main_block">
+        <div class="arrow arrow_left"><img src="left.png" onClick="prev()" class="left" alt=""></div>
+        <template class="section-template">
+            <section class="box visible">
+                <h1 class="section-name"></h1>
+                <article class="section-content"></article>
+                <aside class="modal">
+                    <div class="modal-content"></div>
+                </aside>
+            </section>
+        </template>
+        <div class="arrow arrow_right"><img src="right.png" onClick="next()" class="right" alt=""></div>
+    </main>
+
+    <!--<section onClick="next(event, 1)" id="one" class="main visible">
+            <div class="arrow"></div>
+            <h1></h1>
+            <article></article>
+            <div class="arrow"><img src="right.png" onClick="next(event, 2)" class="right" alt=""></div>
+        </section>
+        <section onClick="next(event, 2)" id="two" class="main visible">
+            <div class="arrow"><img src="left.png" onClick="next(event, 1)" class="left" alt=""></div>
+            <article></article>
+            <div class="arrow"><img src="right.png" onClick="next(event, 3)" class="right" alt=""></div>
+        </section>
+        <section onClick="next(event, 3)" id="three" class="main visible">
+            <div class="arrow"><img src="left.png" onClick="next(event, 2)" class="left" alt=""></div>
+            <article></article>
+            <div class="arrow"><img src="right.png" onClick="next(event, 4)" class="right" alt=""></div>
+        </section>
+        <section onClick="next(event, 4)" id="four" class="main visible">
+            <div class="arrow"><img src="left.png" onClick="next(event, 3)" class="left" alt=""></div>
+            <article></article>
+            <div class="arrow"></div>
+        </section>-->
+    <script src="logic.js"></script>
+</body>
+
+</html>

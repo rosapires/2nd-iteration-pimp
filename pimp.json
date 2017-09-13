@@ -1,0 +1,206 @@
+{
+ "core areas":   {
+        "business": {
+            "title": "Business",
+            "description": "",
+            "ects": "",
+            "properties": {
+                "knowledge": [
+                    "key topics within multimedia-related commercial law, including copyright, data protection law and contract law",
+                    "a company’s control, communication and decision-making processes",
+                    "the possible organisational consequences of implementing multimedia productions in an organisation",
+                    "key methods and tools related to financial planning and control of multimedia productions",
+                    "key innovation and entrepreneurship topics"
+                ],
+                "skills": [
+                    "assess the vision, mission and values as well as the strategy and culture of organisations in relation to multimedia productions"
+                ],
+                "competences": [
+                    "apply relevant theories, methods and IT tools for planning, control and quality assurance of development projects",
+                    "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
+                    "acquire new knowledge, skills and competencies of relevance to the profession"
+                ]
+            }
+        },
+        "communication": {
+            "title": "Communication and Presentation",
+            "description": "",
+            "properties": {
+                "knowledge": [
+                    "key communication theory and method applied in the multimedia field",
+                    "key marketing theory and method applied in the multimedia field",
+                    "key applied communicative tools and techniques and genres",
+                    "key concepts in the field of media sociology (the use of digital media by different social groups, both historically and currently)"
+                ],
+                "skills": [
+                    "collect and assess empirical data on target groups and situations",
+                    "apply key methods and tools to describe a target group in relation to multimedia tasks",
+                    "assess and produce communication aimed at selected target groups",
+                    "apply key methods and tools to build and assess information architecture, including struc-turing, planning and communicating information",
+                    "apply key methods and tools to plan and conduct user tests",
+                    "summarise and communicate a development project in the form of a report",
+                    "apply key methods and tools for stakeholder presentations",
+                    "assess and apply communication elements in various media productions",
+                    "assess the importance of cultural factors to national and international communication",
+                    "assess connections between cultural identity and forms of expression",
+                    "identify, select and present communication strategies and forms of communication for un-dertaking multimedia tasks in a globalised society"
+                ],
+                "competences": [
+                    "handle communication and marketing across platforms",
+                    "handle digital marketing",
+                    "handle interactive communication in multimedia products",
+                    "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
+                    "acquire new knowledge, skills and competencies of relevance to the profession"
+                ]
+            }
+        },
+        "design": {
+            "title": "Design and Visualization",
+            "description": "",
+            "properties": {
+                "knowledge": [
+                    "key tools for video and audio production",
+                    "key methods for documenting design",
+                    "the history of design and aesthetics in relation to the multimedia field",
+                    "the connection between application and design in the multimedia field",
+                    "key theory and method in relation to animation techniques",
+                    "key theory and method in relation to narrative and production techniques"
+                ],
+                "skills": [
+                    "assess and apply key methods for ideation and concept development",
+                    "design user interfaces for different digital platforms based on key theory and assessment",
+                    "assess and apply key user-oriented design methods",
+                    "assess and apply key digital graphic design principles",
+                    "assess and apply aesthetic styles in relation to the multimedia field",
+                    "assess and prepare graphic material for further digital production",
+                    "present design-related problems and issues as well as possible solutions to stakeholders",
+                    "assess and apply methods for documenting interactive multimedia productions",
+                    "assess and apply techniques for the production and post-processing of video and audio",
+                    "present the choice of media mechanisms to stakeholders"
+                ],
+                "competences": [
+                    "manage and realise the connection between message and design",
+                    "manage and realise the connection between identity and design",
+                    "manage the design and development of interactive user interfaces",
+                    "manage and integrate the expression of digital media on different digital platforms",
+                    "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
+                    "acquire new knowledge, skills and competencies of relevance to the profession"
+                ]
+            }
+        },
+        "intdev": {
+            "title": "Interaction Development",
+            "description": "",
+            "properties": {
+                "knowledge": [
+                    "the structure and use of the Internet",
+                    "object-oriented programming in relation to multimedia practice",
+                    "technical possibilities and limitations of development environments applied in practice",
+                    "elements of Content Management Systems (CMS) applied in practice",
+                    "key applied theory and method in relation to system development",
+                    "interfaces for exchanging data with third-party services",
+                    "important security aspects of networks, multimedia applications and data communication"
+                ],
+                "skills": [
+                    "assess and apply key methods and tools for search engine optimisation (SEO)",
+                    "prepare and present documentation in accordance with practice",
+                    "assess and apply current formatting languages",
+                    "program client and server-based multimedia solutions",
+                    "apply key methods and tools for modelling, structuring and implementing functionality",
+                    "use a database manipulation language applied in practice",
+                    "apply key methods for modelling data and implementing databases",
+                    "apply key methods for assuring quality through testing and troubleshooting"
+                ],
+                "competences": [
+                    "manage modelling, structuring and formatting of information in accordance with practice",
+                    "manage modelling, structuring and programming of functionality",
+                    "manage integration of different media types in multimedia applications",
+                    "handle data persistence for dynamic multimedia applications",
+                    "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
+                    "acquire new knowledge, skills and competencies of relevance to the profession"
+                ]
+            }
+        }
+    },
+   "first year": {
+        "intro": {
+            "title": "First-semester exam – Multimedia Production Basic",
+            "port-ev": {
+                "name": "Portfolio evaluation",
+                "description": "The first-semester portfolio evaluation is a precondition for students being registered for the exam in the compulsory programme element in the second semester (first-year exam).At the end of the first semester, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assignments together with the teachers. This is registered in a portfolio. The internal evaluation of the portfolio and product presentation provides a framework for dialogue on the students’ learning and potential for development later in the programme."
+            },
+            "first-exam": {
+                "name": "First-year exam requirements",
+                "description": "The objective is to test the students’ understanding of the theory, method and tools acquired through participation in the compulsory programme element Multimedia Production Basic.",
+                "properties": [
+                    "The exam is to demonstrate that the student is able to:",
+                    "communicate visually to a target group",
+                    "develop an interactive digital product, taking into account the stakeholders",
+                    "carry out a project in a team"
+                ]
+            },
+            "project-work": {
+                "name": "Project work, product and report",
+                "description": "Project work must be interdisciplinary and problem-oriented, resulting in a functioning digital prototype and a report documenting the development work and the product. The project description sets out the requirements regarding group size, product scope and process documentation. It is made available to the students, examiner and co-examiner."
+            },
+            "submission": {
+                "name": "Project work must be interdisciplinary and problem-oriented, resulting in a functioning digital prototype and a report documenting the development work and the product. The project description sets out the requirements regarding group size, product scope and process documentation. It is made available to the students, examiner and co-examiner.",
+                "description": "Students must submit a functioning digital prototype and a project report. The report may not exceed 10 standard pages, plus 8 standard pages per group member. Front page, table of contents, bibliography and appendices are not included in the maximum number of pages. A standard page is 2,400 characters with spaces and footnotes. In connection with group reports, the individual student’s contribution must be clearly stated."
+            }
+        }
+    },
+   "second year": {
+        "first-year": {
+            "title": "First-semester exam – Multimedia Production Basic",
+            "port-ev": {
+                "name": "Portfolio evaluation",
+                "description": "The first-semester portfolio evaluation is a precondition for students being registered for the exam in the compulsory programme element in the second semester (first-year exam).At the end of the first semester, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assignments together with the teachers. This is registered in a portfolio. The internal evaluation of the portfolio and product presentation provides a framework for dialogue on the students’ learning and potential for development later in the programme."
+            },
+            "first-exam": {
+                "name": "First-year exam requirements",
+                "description": "The objective is to test the students’ understanding of the theory, method and tools acquired through participation in the compulsory programme element Multimedia Production Basic.",
+                "properties": [
+                    "The exam is to demonstrate that the student is able to:",
+                    "communicate visually to a target group",
+                    "develop an interactive digital product, taking into account the stakeholders",
+                    "carry out a project in a team"
+                ]
+            },
+            "project-work": {
+                "name": "Project work, product and report",
+                "description": "Project work must be interdisciplinary and problem-oriented, resulting in a functioning digital prototype and a report documenting the development work and the product. The project description sets out the requirements regarding group size, product scope and process documentation. It is made available to the students, examiner and co-examiner."
+            },
+            "submission": {
+                "name": "Project work must be interdisciplinary and problem-oriented, resulting in a functioning digital prototype and a report documenting the development work and the product. The project description sets out the requirements regarding group size, product scope and process documentation. It is made available to the students, examiner and co-examiner.",
+                "description": "Students must submit a functioning digital prototype and a project report. The report may not exceed 10 standard pages, plus 8 standard pages per group member. Front page, table of contents, bibliography and appendices are not included in the maximum number of pages. A standard page is 2,400 characters with spaces and footnotes. In connection with group reports, the individual student’s contribution must be clearly stated."
+            }
+        }
+    },
+   "rullz": {
+        "first-year": {
+            "title": "First-semester exam – Multimedia Production Basic",
+            "port-ev": {
+                "name": "Portfolio evaluation",
+                "description": "The first-semester portfolio evaluation is a precondition for students being registered for the exam in the compulsory programme element in the second semester (first-year exam).At the end of the first semester, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assignments together with the teachers. This is registered in a portfolio. The internal evaluation of the portfolio and product presentation provides a framework for dialogue on the students’ learning and potential for development later in the programme."
+            },
+            "first-exam": {
+                "name": "First-year exam requirements",
+                "description": "The objective is to test the students’ understanding of the theory, method and tools acquired through participation in the compulsory programme element Multimedia Production Basic.",
+                "properties": [
+                    "The exam is to demonstrate that the student is able to:",
+                    "communicate visually to a target group",
+                    "develop an interactive digital product, taking into account the stakeholders",
+                    "carry out a project in a team"
+                ]
+            },
+            "project-work": {
+                "name": "Project work, product and report",
+                "description": "Project work must be interdisciplinary and problem-oriented, resulting in a functioning digital prototype and a report documenting the development work and the product. The project description sets out the requirements regarding group size, product scope and process documentation. It is made available to the students, examiner and co-examiner."
+            },
+            "submission": {
+                "name": "Project work must be interdisciplinary and problem-oriented, resulting in a functioning digital prototype and a report documenting the development work and the product. The project description sets out the requirements regarding group size, product scope and process documentation. It is made available to the students, examiner and co-examiner.",
+                "description": "Students must submit a functioning digital prototype and a project report. The report may not exceed 10 standard pages, plus 8 standard pages per group member. Front page, table of contents, bibliography and appendices are not included in the maximum number of pages. A standard page is 2,400 characters with spaces and footnotes. In connection with group reports, the individual student’s contribution must be clearly stated."
+            }
+        }
+    }
+}
