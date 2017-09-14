@@ -1,5 +1,5 @@
 {
- "core areas":   {
+ "CoreAreas":   {
         "business": {
             "title": "Business",
             "description": "",
@@ -122,7 +122,7 @@
             }
         }
     },
-   "first year": {
+   "First Year": {
         "intro": {
             "title": "First-semester exam – Multimedia Production Basic",
             "port-ev": {
@@ -149,7 +149,7 @@
             }
         }
     },
-   "second year": {
+   "Second Year": {
         "first-year": {
             "title": "First-semester exam – Multimedia Production Basic",
             "port-ev": {
@@ -176,7 +176,7 @@
             }
         }
     },
-   "rullz": {
+   "Study program overview": {
         "first-year": {
             "title": "First-semester exam – Multimedia Production Basic",
             "port-ev": {
