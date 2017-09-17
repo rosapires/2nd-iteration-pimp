@@ -1,10 +1,11 @@
 {
- "CoreAreas":   {
-        "business": {
-            "title": "Business",
-            "description": "",
-            "ects": "",
-            "properties": {
+    "CoreAreas": {
+        "title": "Core Areas",
+        "subcategory": {
+            "business": {
+                "title": "Business",
+                "description": "sometihn",
+                "ects": "",
                 "knowledge": [
                     "key topics within multimedia-related commercial law, including copyright, data protection law and contract law",
                     "a company’s control, communication and decision-making processes",
@@ -20,12 +21,11 @@
                     "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
                     "acquire new knowledge, skills and competencies of relevance to the profession"
                 ]
-            }
-        },
-        "communication": {
-            "title": "Communication and Presentation",
-            "description": "",
-            "properties": {
+            },
+            "communication": {
+                "title": "Communication and Presentation",
+                "description": "",
+                "ects": "",
                 "knowledge": [
                     "key communication theory and method applied in the multimedia field",
                     "key marketing theory and method applied in the multimedia field",
@@ -52,12 +52,11 @@
                     "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
                     "acquire new knowledge, skills and competencies of relevance to the profession"
                 ]
-            }
-        },
-        "design": {
-            "title": "Design and Visualization",
-            "description": "",
-            "properties": {
+            },
+            "design": {
+                "title": "Design and Visualization",
+                "description": "",
+                "ects": "",
                 "knowledge": [
                     "key tools for video and audio production",
                     "key methods for documenting design",
@@ -86,12 +85,11 @@
                     "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
                     "acquire new knowledge, skills and competencies of relevance to the profession"
                 ]
-            }
-        },
-        "intdev": {
-            "title": "Interaction Development",
-            "description": "",
-            "properties": {
+            },
+            "intdev": {
+                "title": "Interaction Development",
+                "description": "",
+                "ects": "",
                 "knowledge": [
                     "the structure and use of the Internet",
                     "object-oriented programming in relation to multimedia practice",
@@ -122,9 +120,9 @@
             }
         }
     },
-   "First Year": {
-        "intro": {
-            "title": "First-semester exam – Multimedia Production Basic",
+    "FirstYear": {
+        "title": "First-semester exam – Multimedia Production Basic",
+        "subcategory": {
             "port-ev": {
                 "name": "Portfolio evaluation",
                 "description": "The first-semester portfolio evaluation is a precondition for students being registered for the exam in the compulsory programme element in the second semester (first-year exam).At the end of the first semester, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assignments together with the teachers. This is registered in a portfolio. The internal evaluation of the portfolio and product presentation provides a framework for dialogue on the students’ learning and potential for development later in the programme."
@@ -149,9 +147,9 @@
             }
         }
     },
-   "Second Year": {
-        "first-year": {
-            "title": "First-semester exam – Multimedia Production Basic",
+     "SecondYear": {
+        "title": "First-semester exam – Multimedia Production Basic",
+        "subcategory": {
             "port-ev": {
                 "name": "Portfolio evaluation",
                 "description": "The first-semester portfolio evaluation is a precondition for students being registered for the exam in the compulsory programme element in the second semester (first-year exam).At the end of the first semester, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assignments together with the teachers. This is registered in a portfolio. The internal evaluation of the portfolio and product presentation provides a framework for dialogue on the students’ learning and potential for development later in the programme."
@@ -176,9 +174,9 @@
             }
         }
     },
-   "Study program overview": {
-        "first-year": {
-            "title": "First-semester exam – Multimedia Production Basic",
+     "StudyProgram": {
+        "title": "First-semester exam – Multimedia Production Basic",
+        "subcategory": {
             "port-ev": {
                 "name": "Portfolio evaluation",
                 "description": "The first-semester portfolio evaluation is a precondition for students being registered for the exam in the compulsory programme element in the second semester (first-year exam).At the end of the first semester, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assignments together with the teachers. This is registered in a portfolio. The internal evaluation of the portfolio and product presentation provides a framework for dialogue on the students’ learning and potential for development later in the programme."

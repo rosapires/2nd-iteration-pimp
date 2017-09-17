@@ -7,51 +7,76 @@ const colors = ['#F9DBBD', '#FCA17D', '#DA627D', '#9A348E', 'lightgrey'];
 let LENGHT = 0;
 let animationOccurance = 0;
 
-window.addEventListener("load", function () {
+// new FetchGoogleJSON("1_EHOt_PDayCeNhF_nRSLVdsNSXhv2Gbp90Dr0vhvZ_U", show);
 
-});
-
-function getData(link) {
-    fetch(link).then(response => response.json()).then(json => show(json));
-}
-
-function show(json) {
+function generateContent(json) {
     console.log(json);
-    const keys = Object.keys(json);
-    let itemKeys = Object.keys(keys);
-    LENGHT = keys.length;
-    keys.forEach((elm, i) => {
-        let temp = document.querySelector(".section-template").content;
-        let clone = temp.cloneNode(true);
-        let itemContent = clone.querySelector('.visible').childNodes;
+    const sections = Object.keys(json);
+    LENGHT = sections.length;
+    sections.forEach((section, i) => {
+        let template = document.querySelector(".section-template").content;
+        let clone = template.cloneNode(true);
 
-        clone.querySelector('.section-name').textContent = elm;
-        const section = clone.querySelector('.box');
-        section.style.backgroundColor = colors[i];
-        section.setAttribute('id', 'h' + i)
-        section.addEventListener('click', (e) => {
-            const mainSection = document.querySelector('#h' + i);
-            document.querySelectorAll('.visible').forEach(element => {
-                element.classList.remove('visible');
+        const sectionData = json[section];
 
-            });
-            mainSection.classList.add('visible');
-            handleArrows('h' + i);
-            // clone.querySelector('.modal-tab').textContent = 
-            console.log(itemKeys);
+        clone.querySelector('.section-name').textContent = sectionData.title;
 
-            itemKeys.forEach((item, i) => {
-                clone.querySelector('.modal-tab').textContent = item;
-            });
+        generateSubcategory(clone, sectionData);
 
-        });
+
+        const sectionElement = clone.querySelector('.box');
+        sectionElement.style.backgroundColor = colors[i];
+        sectionElement.setAttribute('id', 'h' + i)
+        sectionElement.addEventListener('click', () => show(i));
         main.appendChild(clone);
     });
 }
 
+function generateSubcategory(clone, data) {
+    console.log(data);
+    const subsections = Object.keys(data.subcategory);
 
+    subsections.forEach((subsection, i) => {
+        const template = clone.querySelector(".subsection-template").content;
+        const subClone = template.cloneNode(true);
 
+        const subsectionData = data.subcategory[subsection];
+        const subElements = Object.keys(subsectionData);
+        subElements.forEach(element => {
+            const container = subClone.querySelector('div');
+            if (element === 'title') {
+                container.innerHTML += `<h3>${subsectionData[element]}</h3>`;
+            } else if (element === 'name') {
+                container.innerHTML += `<h3>${subsectionData[element]}</h3>`;
+            } else if (typeof subsectionData[element] === "object" && subsectionData[element].length) {
+                let list = '<ul>' + element;
+                subsectionData[element].forEach(el => {
+                    list += `<li>${el}</li>`;
+                });
+                list += "</ul>"
+                container.innerHTML += list;
+            } else {
+                container.innerHTML += `<p>${subsectionData[element]}</p>`;
+            }
+        });
 
+        // generateList(subClone, subsectionData);
+
+        clone.querySelector(".section-content").appendChild(subClone);
+
+    });
+}
+
+function show(i) {
+    const mainSection = document.querySelector('#h' + i);
+    document.querySelectorAll('.visible').forEach(element => {
+        element.classList.remove('visible');
+        element.classList.remove('expanded');
+    });
+    mainSection.classList.add('visible');
+    mainSection.classList.add('expanded');
+    handleArrows('h' + i);
+}
 
 function next() {
     if (Date.now() - animationOccurance < 900)
@@ -61,7 +86,9 @@ function next() {
     const nextElementId = currentSection.id[1] * 1 === LENGHT - 1 ? 'h0' : 'h' + (currentSection.id[1] * 1 + 1);
     const nextElement = document.querySelector('#' + nextElementId);
     currentSection.classList.remove('visible');
+    currentSection.classList.remove('expanded');
     nextElement.classList.add('visible');
+    nextElement.classList.add('expanded');
     handleArrows(nextElementId);
 }
 
@@ -73,13 +100,16 @@ function prev() {
     const nextElementId = currentSection.id[1] * 1 === 0 ? 'h' + (LENGHT - 1) : 'h' + (currentSection.id[1] * 1 - 1);
     const nextElement = document.querySelector('#' + nextElementId);
     currentSection.classList.remove('visible');
+    currentSection.classList.remove('expanded');
     nextElement.classList.add('visible');
+    nextElement.classList.add('expanded');
     handleArrows(nextElementId);
 }
 
 function close() {
     document.querySelectorAll('.box').forEach(element => {
         element.classList.add('visible');
+        element.classList.remove('expanded');
     });
     handleArrows();
 }
@@ -100,4 +130,25 @@ function handleArrows(id) {
     }
 }
 
-getData('pimp.json');
+fetch('pimp.json').then(response => response.json()).then(generateContent);
+// new FetchGoogleJSON("1_EHOt_PDayCeNhF_nRSLVdsNSXhv2Gbp90Dr0vhvZ_U", generateContent);
+
+
+document.addEventListener('keyup', (e) => {
+    switch (e.keyCode) {
+        case 39:
+            next();
+            break;
+
+        case 37:
+            prev();
+            break;
+
+        case 27:
+            close();
+            break;
+
+        default:
+            break;
+    }
+});
