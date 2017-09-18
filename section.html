@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="stylesec.css">
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <link rel="stylesheet"
+          href="node_modules/material-components-web/dist/material-components-web.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
+    <nav id="nav">
+        <a id="homeicon" href="#"></a>
+    </nav>
     <main class="main_block">
         <div class="arrow arrow_left"><img src="left.png" onClick="prev()" class="left" alt=""></div>
         <template class="section-template">
@@ -16,15 +22,17 @@
                 <h1 class="section-name"></h1>
                 <article class="section-content">
                     <template class="subsection-template">
-                        <div><div>
+                        <div class="modal">
+                        </div>
                     </template>
                 </article>
             </section>
         </template>
+
         <div class="arrow arrow_right"><img src="right.png" onClick="next()" class="right" alt=""></div>
     </main>
-    <script src="FetchGoogleJSON.js"></script>
-    <script src="PrettifyGoogleJSON.js"></script>
+    <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+    <script>mdc.autoInit()</script>
     <script src="logic.js"></script>
 </body>
 

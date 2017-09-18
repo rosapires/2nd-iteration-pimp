@@ -42,12 +42,18 @@ function generateSubcategory(clone, data) {
 
         const subsectionData = data.subcategory[subsection];
         const subElements = Object.keys(subsectionData);
+        let lastOverlay;
         subElements.forEach(element => {
             const container = subClone.querySelector('div');
             if (element === 'title') {
                 container.innerHTML += `<h3>${subsectionData[element]}</h3>`;
+
+                container.addEventListener('click', function(e){
+                    console.log(e)
+                })
             } else if (element === 'name') {
                 container.innerHTML += `<h3>${subsectionData[element]}</h3>`;
+
             } else if (typeof subsectionData[element] === "object" && subsectionData[element].length) {
                 let list = '<ul>' + element;
                 subsectionData[element].forEach(el => {
@@ -55,6 +61,7 @@ function generateSubcategory(clone, data) {
                 });
                 list += "</ul>"
                 container.innerHTML += list;
+                //document.querySelector(".modal:")
             } else {
                 container.innerHTML += `<p>${subsectionData[element]}</p>`;
             }
