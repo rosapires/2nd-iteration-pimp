@@ -2,38 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="stylesec.css">
-    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
-    <link rel="stylesheet"
-          href="node_modules/material-components-web/dist/material-components-web.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="stylesec.css">
+  <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+  <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="nav">
-        <a id="homeicon" href="#"></a>
-    </nav>
-    <main class="main_block">
-        <div class="arrow arrow_left"><img src="left.png" onClick="prev()" class="left" alt=""></div>
-        <template class="section-template">
-            <section class="box visible">
-                <h1 class="section-name"></h1>
-                <article class="section-content">
-                    <template class="subsection-template">
-                        <div class="modal">
-                        </div>
-                    </template>
-                </article>
-            </section>
-        </template>
-
-        <div class="arrow arrow_right"><img src="right.png" onClick="next()" class="right" alt=""></div>
-    </main>
-    <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
-    <script>mdc.autoInit()</script>
-    <script src="logic.js"></script>
+  <nav id="nav">
+    <a id="homeicon" href="#"></a>
+  </nav>
+  <main class="main_block">
+    <div class="arrow arrow_left"><img src="left.png" onClick="prev()" class="left" alt=""></div>
+    <template class="section-template">
+      <section class="box visible">
+        <h1 class="section-name"><span></span><img src="close.svg" class="close"/></h1>
+        <img src="" class="mainIcons"/>
+        <article class="section-content">
+          <template class="subsection-template">
+            <div class="modal">
+              <img src="" alt="" class="table">
+            </div>
+          </template>
+        </article>
+      </section>
+    </template>
+    <div class="arrow arrow_right"><img src="right.png" onClick="next()" class="right" alt=""></div>
+  </main>
+  <div onclick="closeModal()" class='modal-wrapper'>
+    <div onClick="event.stopPropagation()" class='modalNew'>
+          <img src="close.svg" class="closeM"/>
+    </div>
+  </div>
+  <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+  <script>
+    mdc.autoInit()
+  </script>
+  <script src="logic.js"></script>
 </body>
 
 </html>
