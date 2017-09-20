@@ -2,6 +2,7 @@
     "CoreAreas": {
         "title": "Core Areas",
         "image": "hash.png",
+        "table": "",
         "subcategory": {
             "intro": {
                 "title": "The Academic Program in Multimedia design and Communication program focuses on four core areas:"
@@ -126,6 +127,7 @@
     },
     "FirstYear": {
         "title": "First Year",
+        "image": "pen.png",
         "intro": "",
         "table": "",
         "subcategory": {
@@ -156,6 +158,8 @@
     },
      "SecondYear": {
         "title": "Second Year",
+        "image": "bulb.png",
+        "table": "",
         "subcategory": {
             "elective": {
                 "title": "2nd Year Exams content",
@@ -181,6 +185,8 @@
     },
      "StudyProgram": {
         "title": "Study Program Overview",
+        "image": "comp.png",
+        "table": "",
         "subcategory": {
             "progstructure": {
                 "title": "Program structure at a glance",

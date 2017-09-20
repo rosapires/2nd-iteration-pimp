@@ -2,7 +2,6 @@ let main = document.querySelector("main");
 let article = document.querySelector("article");
 const colors = ['#F9DBBD', '#FCA17D', '#DA627D', '#9A348E', 'lightgrey'];
 
-
 let LENGHT = 0;
 let animationOccurance = 0;
 
@@ -63,17 +62,19 @@ function generateSubcategory(clone, data) {
 
     container.innerHTML = `<h3>${subsectionData.title}</h3>`;
 
-
     container.addEventListener('click', function (e) {
       showModal(modalContent);
     })
-
-    // generateList(subClone, subsectionData);
-
     clone.querySelector(".section-content").appendChild(subClone);
-
+    
   });
+  // removeM();
 }
+
+
+// function removeM() {
+//   document.querySelector(".section-content>.modal").classList.remove(".modal");
+// }
 
 function showModal(content) {
   const modal = document.querySelector('.modalNew ');
@@ -86,6 +87,8 @@ function closeModal() {
 
 }
 
+let mainIcons = document.querySelectorAll('.mainIcons');
+
 function show(i) {
   console.log("show called")
   const mainSection = document.querySelector('#h' + i);
@@ -95,7 +98,10 @@ function show(i) {
   });
   mainSection.classList.add('visible');
   mainSection.classList.add('expanded');
-  document.querySelector('.mainIcons').classList.add("hidden");
+  mainIcons.forEach((mi) => {
+    mi.classList.add("hidden");
+  });
+  console.log(mainIcons);
   handleArrows('h' + i);
 }
 
@@ -135,19 +141,19 @@ function listenforClose() {
   
   closeImgs.forEach((ci)=> {
     ci.addEventListener('click', close)
-    console.log(ci);
   });
 }
 
 function close(e) {
   console.log("close called")
   e.stopPropagation();
-  document.querySelector('.mainIcons').classList.remove("hidden");
+  mainIcons.forEach((mi) => {
+    mi.classList.remove("hidden");
+  });
+  console.log(mainIcons);
   document.querySelectorAll('.box').forEach(element => {
-    
     element.classList.add('visible');
     element.classList.remove('expanded');
-    console.log(element.classList)
   });
  // handleArrows();
 }
