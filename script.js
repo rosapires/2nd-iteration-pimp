@@ -3,8 +3,6 @@ var destination = 0;
 var speed = 10;
 var scroller = null;
 
-window.addEventListener("load", gotoSec);
-
 function initScroll(elementId){
 	destination = document.getElementById('scrollcontent').offsetTop;
 	
@@ -44,10 +42,4 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("navMobile").style.width = "0";
-}
-
-function gotoSec () {
-	document.querySelector("#sectionButton").addEventListener('click', function(){
-		location.href = "http://127.0.0.1:8080/section.html";
-	});
 }

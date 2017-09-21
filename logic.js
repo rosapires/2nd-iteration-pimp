@@ -19,6 +19,10 @@ function generateContent(json) {
     const sectionData = json[section];
     clone.querySelector('.section-name span').textContent = sectionData.title;
     clone.querySelector('.mainIcons').src = sectionData.image;
+    clone.querySelector('.table').src = sectionData.table;
+    clone.querySelector('.table').classList.add("hidden");
+    clone.querySelector('.intro').textContent = sectionData.intro;
+    clone.querySelector('.intro').classList.add("hidden");
     
     generateSubcategory(clone, sectionData);
 
@@ -87,7 +91,7 @@ function closeModal() {
 
 }
 
-let mainIcons = document.querySelectorAll('.mainIcons');
+// let mainIcons = document.querySelectorAll('.mainIcons');
 
 function show(i) {
   console.log("show called")
@@ -98,10 +102,15 @@ function show(i) {
   });
   mainSection.classList.add('visible');
   mainSection.classList.add('expanded');
+  let mainIcons = document.querySelectorAll('.mainIcons');
+  let tables = document.querySelectorAll('.table');
+  document.querySelector('.intro').classList.remove("hidden");
   mainIcons.forEach((mi) => {
     mi.classList.add("hidden");
   });
-  console.log(mainIcons);
+  tables.forEach((ti) => {
+    ti.classList.remove("hidden");
+  });
   handleArrows('h' + i);
 }
 
@@ -147,15 +156,20 @@ function listenforClose() {
 function close(e) {
   console.log("close called")
   e.stopPropagation();
+  let mainIcons = document.querySelectorAll('.mainIcons');
+  let tables = document.querySelectorAll('.table');
+  document.querySelector('.intro').classList.add("hidden");
   mainIcons.forEach((mi) => {
     mi.classList.remove("hidden");
   });
-  console.log(mainIcons);
+  tables.forEach((ti) => {
+    ti.classList.add("hidden");
+  });
   document.querySelectorAll('.box').forEach(element => {
     element.classList.add('visible');
     element.classList.remove('expanded');
   });
- // handleArrows();
+ handleArrows();
 }
 
 function handleArrows(id) {

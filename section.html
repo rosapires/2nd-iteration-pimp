@@ -5,21 +5,22 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="stylesec.css">
-  <!--<link rel="stylesheet" type="text/css" href="style.css">-->
   <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
   <nav id="nav">
-    <a id="homeicon" href="#"></a>
+    <a id="mmd" href="index.html"><img src="img/mmd.png" alt="" class="homeicon"><span></span><img id="cur" src="img/curriculum.png" alt="" class="homeicon"></a>
   </nav>
   <main class="main_block">
-    <div class="arrow arrow_left"><img src="left.png" onClick="prev()" class="left" alt=""></div>
+    <div class="arrow arrow_left"><img src="img/left.png" onClick="prev()" class="left" alt=""></div>
     <template class="section-template">
       <section class="box visible">
-        <h1 class="section-name"><span></span><img src="close.svg" class="close"/></h1>
-        <img src="" class="mainIcons"/>
+        <h1 class="section-name"><span></span><img src="img/close.svg" class="close" /></h1>
+        <img src="" class="mainIcons" />
+        <img src="" class="table" />
+        <h5 class="intro"></h5>
         <article class="section-content">
           <template class="subsection-template">
             <div class="modal">
@@ -28,16 +29,14 @@
         </article>
       </section>
     </template>
-    <div class="arrow arrow_right"><img src="right.png" onClick="next()" class="right" alt=""></div>
+    <div class="arrow arrow_right"><img src="img/right.png" onClick="next()" class="right" alt=""></div>
   </main>
   <div onclick="closeModal()" class='modal-wrapper'>
-    <div onClick="event.stopPropagation()" class='modalNew'>
-          <img src="close.svg" class="closeM"/>
-    </div>
+    <div onClick="event.stopPropagation()" class='modalNew'></div>
   </div>
   <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
   <script>
-    mdc.autoInit()
+                  mdc.autoInit()
   </script>
   <script src="logic.js"></script>
 </body>

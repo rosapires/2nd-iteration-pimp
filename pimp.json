@@ -1,12 +1,10 @@
 {
     "CoreAreas": {
         "title": "Core Areas",
-        "image": "hash.png",
+        "intro": "The Academic Program in Multimedia design and Communication program focuses on four core areas:",
+        "image": "img/hash.png",
         "table": "",
         "subcategory": {
-            "intro": {
-                "title": "The Academic Program in Multimedia design and Communication program focuses on four core areas:"
-            },
             "business": {
                 "title": "Business",
                 "description": "It is intended to provide the student with the qualifications needed to incorporate organisational aspects into multimedia development and use, and to enable the student to plan, manage and carry out a development project.",
@@ -127,9 +125,9 @@
     },
     "FirstYear": {
         "title": "First Year",
-        "image": "pen.png",
+        "image": "img/pen.png",
         "intro": "",
-        "table": "",
+        "table": "img/table_one.svg",
         "subcategory": {
             "port-ev": {
                 "image": "",
@@ -158,8 +156,9 @@
     },
      "SecondYear": {
         "title": "Second Year",
-        "image": "bulb.png",
-        "table": "",
+        "intro": "",
+        "image": "img/bulb.png",
+        "table": "img/table_two.svg",
         "subcategory": {
             "elective": {
                 "title": "2nd Year Exams content",
@@ -185,13 +184,10 @@
     },
      "StudyProgram": {
         "title": "Study Program Overview",
-        "image": "comp.png",
-        "table": "",
+        "intro": "",
+        "image": "img/comp.png",
+        "table": "img/table4.svg",
         "subcategory": {
-            "progstructure": {
-                "title": "Program structure at a glance",
-                "description": "The first-semester portfolio evaluation is a precondition for students being registered for the exam in the compulsory programme element in the second semester (first-year exam).At the end of the first semester, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assignments together with the teachers. This is registered in a portfolio. The internal evaluation of the portfolio and product presentation provides a framework for dialogue on the students’ learning and potential for development later in the programme."
-            },
             "abrod": {
                 "title": "Study Abroad",
                 "description": "Having passed the first-year exam, students can choose to complete either the entire programme or parts of it abroad. KEA Copenhagen School of Design and Technology offers multiple possibilities for international study, including the fourth-semester internship. Information on partner institutions, international internships, credit transfer and procedures are published regularly by KEA. KEA may grant the transfer of programme elements or parts thereof according to this curriculum which are passed at another educational institution and which are equivalent to programme elements or parts thereof in this curriculum. If the programme element in question has been assessed according to the 7-point grading scale at the institution where the exam has been taken and is equivalent to a course in this curriculum, the grade may be transferred. KEA may grant the transfer of programme elements completed at another Danish or foreign institution of higher education to replace programme elements covered by this curriculum. If a credit transfer is granted, programme elements are deemed to have been completed if they have been passed in accordance with the rules applicable to the programme in question. The assessment is transferred as ‘passed’."
