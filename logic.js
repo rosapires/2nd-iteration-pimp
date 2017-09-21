@@ -19,59 +19,76 @@ function generateContent(json) {
     const sectionData = json[section];
     clone.querySelector('.section-name span').textContent = sectionData.title;
     clone.querySelector('.mainIcons').src = sectionData.image;
-    clone.querySelector('.table').src = sectionData.table;
-    clone.querySelector('.table').classList.add("hidden");
-    clone.querySelector('.intro').textContent = sectionData.intro;
-    clone.querySelector('.intro').classList.add("hidden");
-    
     generateSubcategory(clone, sectionData);
-
     const sectionElement = clone.querySelector('.box');
     sectionElement.style.backgroundColor = colors[i];
     sectionElement.setAttribute('id', 'h' + i)
     sectionElement.addEventListener('click', () => show(i));
     main.appendChild(clone);
   });
+  createSectionOne(json);
+  createSectionTwo(json);
   listenforClose()
 }
 
+function createSectionOne(json){
+  /*clone.querySelector('.table').src = sectionData.table;
+    clone.querySelector('.table').classList.add("hidden");
+    clone.querySelector('.intro').textContent = sectionData.intro;
+    clone.querySelector('.intro').classList.add("hidden");
+    */  
+}
+function createSectionTwo(data){
+  let daddy = document.querySelector('section#h1');
+  console.log(data)
+  let template = document.querySelector('#sectiontwo').content;
+  let clone = template.cloneNode(true);
+  clone.querySelector('h2').textContent=data.FirstYear.subcategory.titleSub;
+  clone.querySelector('.table').src = data.FirstYear.table;
+  clone.querySelector('.subone').textContent=data.FirstYear.subcategory.portev.name;
+  clone.querySelector('.subtwo').textContent=data.FirstYear.subcategory.firstexam.name;
+  clone.querySelector('.suboneDes').textContent=data.FirstYear.subcategory.portev.description;
+  clone.querySelector('.subtwoDes').textContent=data.FirstYear.subcategory.firstexam.description;
+  daddy.appendChild(clone)
+}
+
 function generateSubcategory(clone, data) {
-  // console.log(data);
+   console.log(data);
     const subsections = Object.keys(data.subcategory);
-  subsections.forEach((subsection, i) => {
-    const template = clone.querySelector(".subsection-template").content;
-    const subClone = template.cloneNode(true);
-    const subsectionData = data.subcategory[subsection];
-    const subElements = Object.keys(subsectionData);
-    let lastOverlay;
-    let modalContent = "";
+  // subsections.forEach((subsection, i) => {
+  //   const template = clone.querySelector(".subsection-template").content;
+  //   const subClone = template.cloneNode(true);
+  //   const subsectionData = data.subcategory[subsection];
+  //   const subElements = Object.keys(subsectionData);
+  //   let lastOverlay;
+  //   let modalContent = "";
     
-    subElements.forEach(element => {
-      if (element === 'title') {
-        modalContent += `<h3>${subsectionData[element]}</h3>`;
+  //   subElements.forEach(element => {
+  //     if (element === 'title') {
+  //       modalContent += `<h3>${subsectionData[element]}</h3>`;
 
-      } else if (typeof subsectionData[element] === "object" && subsectionData[element].length) {
-        let list = '<ul>' + element;
-        subsectionData[element].forEach(el => {
-          list += `<li>${el}</li>`;
-        });
-        list += "</ul>"
-        modalContent += list;
-      } else {
-        modalContent += `<p>${subsectionData[element]}</p>`;
-      }
-    });
+  //     } else if (typeof subsectionData[element] === "object" && subsectionData[element].length) {
+  //       let list = '<ul>' + element;
+  //       subsectionData[element].forEach(el => {
+  //         list += `<li>${el}</li>`;
+  //       });
+  //       list += "</ul>"
+  //       modalContent += list;
+  //     } else {
+  //       modalContent += `<p>${subsectionData[element]}</p>`;
+  //     }
+  //   });
 
-    const container = subClone.querySelector('div');
+  //   const container = subClone.querySelector('div');
 
-    container.innerHTML = `<h3>${subsectionData.title}</h3>`;
+  //   container.innerHTML = `<h3>${subsectionData.title}</h3>`;
 
-    container.addEventListener('click', function (e) {
-      showModal(modalContent);
-    })
-    clone.querySelector(".section-content").appendChild(subClone);
+  //   container.addEventListener('click', function (e) {
+  //     showModal(modalContent);
+  //   })
+  //   clone.querySelector(".section-content").appendChild(subClone);
     
-  });
+  // });
   // removeM();
 }
 
@@ -104,7 +121,7 @@ function show(i) {
   mainSection.classList.add('expanded');
   let mainIcons = document.querySelectorAll('.mainIcons');
   let tables = document.querySelectorAll('.table');
-  document.querySelector('.intro').classList.remove("hidden");
+  // document.querySelector('.intro').classList.remove("hidden");
   mainIcons.forEach((mi) => {
     mi.classList.add("hidden");
   });
@@ -158,7 +175,7 @@ function close(e) {
   e.stopPropagation();
   let mainIcons = document.querySelectorAll('.mainIcons');
   let tables = document.querySelectorAll('.table');
-  document.querySelector('.intro').classList.add("hidden");
+  // document.querySelector('.intro').classList.add("hidden");
   mainIcons.forEach((mi) => {
     mi.classList.remove("hidden");
   });

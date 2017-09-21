@@ -3,9 +3,6 @@
     src: url('PhosphateSolid.ttf');
 }
 
-
-
-
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -13,22 +10,25 @@ main {
 }
 
 section {
-    height: 100vh;   
+    height: 150vh;  
 }
+
 section .close {
     display:none;
 }
+
 section.expanded .close {
     display: inline-block;
     height: auto;
-
 }
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     text-decoration: none;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .main_block {
@@ -47,7 +47,6 @@ html, body {
     max-width: 0;
     max-height: 0;
     opacity: 0;
-    
 }
 
 .box .section-name, .box .section-content {
@@ -60,7 +59,6 @@ html, body {
 
 .expanded {
     animation: overflow 1s;
-    overflow-y: auto;
 }
 
 @keyframes overflow {
@@ -107,6 +105,43 @@ html, body {
     right: 15px;
 }
 
+.wrapper {
+    display:none;
+}
+
+.expanded .wrapper {
+    display:block;
+}
+
+.hidden {
+    display: none;
+}
+
+/*@media only screen and (max-width : 360px) {
+    .box {
+        grid-column: 1/-1;
+    }
+}*/
+
+.close {
+    display: grid;
+    grid-column: -2/-1;
+    height: 20px;
+}
+#nav {
+    height: 7vh;
+    display: grid;
+    justify-content: center;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*...................................... Style ................................................*/
 .section-content {
     max-height: 0;
     max-width: 0;
@@ -120,25 +155,14 @@ html, body {
 
 .expanded .section-content {
     max-height: 100%;
-    max-width: 60vw;
+    max-width: 100%;
     opacity: 1;
     margin: 0px 20px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
-
-.hidden {
-    display: none;
-}
-
-@media only screen and (max-width : 360px) {
-    .box {
-        grid-column: 1/-1;
-    }
-}
-
-
-
-/*...................................... Style ................................................*/
 
 .section-name {
     font-family: 'Roboto', sans-serif;
@@ -152,22 +176,13 @@ html, body {
     grid-column: 1/-1;
 }
 
-.close {
-    display: grid;
-    grid-column: -2/-1;
-    height: 20px;
-}
-
-#nav {
-    height: 7vh;
-    display: grid;
-    justify-content: center;
-}
-
-nav a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(250, 250, 250, 0.7);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 25px;
+    /*display: flex;
+    justify-content: center;*/
 }
 
 #cur {
@@ -256,7 +271,6 @@ nav a {
 
 
 .table {
-    grid-column: 1/-1;
-    width: 50vw;
+    width: 60vw;
 }
 

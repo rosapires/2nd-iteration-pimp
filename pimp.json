@@ -129,20 +129,15 @@
         "intro": "",
         "table": "img/table_one.svg",
         "subcategory": {
-            "port-ev": {
+            "titleSub": "First-semester exam – Multimedia Production Basic",
+            "portev": {
                 "image": "",
-                "title": "Prerequisites - portfolio evaluation",
+                "name": "Prerequisites - portfolio evaluation",
                 "description": "The first-semester portfolio evaluation is a precondition for students being registered for the exam in the compulsory programme element in the second semester (first-year exam).At the end of the first semester, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assignments together with the teachers. This is registered in a portfolio. The internal evaluation of the portfolio and product presentation provides a framework for dialogue on the students’ learning and potential for development later in the programme."
             },
-            "first-exam": {
-                "title": "First-year exam requirements",
-                "description": "The objective is to test the students’ understanding of the theory, method and tools acquired through participation in the compulsory programme element Multimedia Production Basic.",
-                "properties": [
-                    "The exam is to demonstrate that the student is able to:",
-                    "communicate visually to a target group",
-                    "develop an interactive digital product, taking into account the stakeholders",
-                    "carry out a project in a team"
-                ]
+            "firstexam": {
+                "name": "First-year exam requirements",
+                "description": "The objective is to test the students’ understanding of the theory, method and tools acquired through participation in the compulsory programme element Multimedia Production Basic. The exam is to demonstrate that the student is able to:· communicate visually to a target group · develop an interactive digital product, taking into account the stakeholders · carry out a project in a team."
             },
             "project-work": {
                 "title": "Project work, product and report",
