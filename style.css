@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-y: hidden;
+}
+#nav{
+    background-color: rgba(999,999,999,.6);
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    transition: background-color .5s;
+    display: none;
+}
+#nav:hover {
+    background-color: rgba(999,999,999,.8);
+}
+#nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#homeicon{
+    background-image: url(images/home.png);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 6%;
+}
+#mmdicon{
+    background-image: url(images/mmd.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: 95% 70%;
+    width: 10%;
+}
+#curriculumicon{
+    background-image: url(images/curriculum.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 73%;
+    width: 10%;
+}
+#maincontent{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#scrollbutton{
+    
+    display: block;
+    width: 10%;
+    margin-left: 45%;
+    position: absolute;
+    top: 80vh;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vh;
+    transform: rotate(90deg);
+    transition: filter .2s linear;
+    animation: appearButton 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    
+}
+@keyframes appearButton{
+    from{
+        top: 70vh;
+        opacity: 0;
+    }
+    to{
+        top: 80vh;
+        opacity: 1;
+    }
+}
+#scrollbutton:hover{
+    filter: invert(1);
+}
+#scrollcontent{
+    width: 100%;
+    height: 100vh;
+}
+#logo{
+    width: 40%;
+    height: 90vh;
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    position: relative;
+    background-color: rgba(94,280,247,.7);
+    box-shadow: 20px 10px 40px;
+    top: 5vh;
+    left: 5%;
+    animation: appear 1s ease-out;
+}
+@keyframes appear{
+    from{
+        left: 0;
+        opacity: 0;
+    }
+    to{
+        left: 5%;
+        opacity: 1;
+    }
+}
+#scrollcontent #para{
+    padding-top: 10vh;
+    width: 80%;
+    margin-left: 10%;
+    height: 60vh;
+    font-size: 18px;
+}
+#footer{
+    width: 100%;
+    background-color: rgba(0,0,0,.9);
+    height: 30vh;
+    color: white;
+}
+#footer p{
+    text-align: center;
+    padding: 2%;
+}
+#footer img{
+    width: 5%;
+    filter: invert(1);
+}
+#toTop{
+    padding: 1vh 0;
+    display: block;
+    width: 5%;
+    margin-left: 84%;
+    position: absolute;
+    top: 155vh;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vh;
+    transform: rotate(270deg);
+    transition: filter .2s linear;
+    filter: invert(1);
+}
+#toTop:hover{
+    filter: invert(.5);
+}
+
+span{
+    display: none;
+}
+#navMobile{
+    display: none;
+}
+#schoolLogos{
+    height: 15vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+#logo1{
+    background-image: url(images/cph_buisness_school_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#logo2{
+    background-image: url(images/erhvervsakademi_arhus_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#logo3{
+    background-image: url(images/erhvervsakademi_dania_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#logo4{
+    background-image: url(images/erhvervsakademi_kea_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#logo5{
+    background-image: url(images/erhvervsakademi_kolding_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#logo6{
+    background-image: url(images/erhvervsakademi_lillebaelt.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#logo7{
+    background-image: url(images/erhvervsakademi_midtvest_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#logo8{
+    background-image: url(images/erhvervsakademi_nortdjylland_white_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#logo9{
+    background-image: url(images/erhvervsakademi_sjaelland_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#logo10{
+    background-image: url(images/erhvervsakademi_sydvest_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#discoverMore{
+    display:block;
+    width: 10%;
+    margin-left: 45%;
+    padding: 10px 0;
+    position: relative;
+    top: 8vh;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color:rgba(94,280,247,.5);
+    border-radius: 5px;
+}
+#icons{
+    margin-left: 25%;
+    width: 50%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#icon1{
+    background-image: url(images/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+#icon2{
+    background-image: url(images/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#icon3{
+    background-image: url(images/3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+#icon4{
+    background-image: url(images/4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+#NDA{
+    color: white;
+}
+@media screen and (max-width:600px) {
+    #navMobile{
+        display: block;
+    }
+    span{
+        background-color: rgba(0,0,0,0);
+        display:block;
+        position: fixed;
+        width: 8%;
+        color: black;
+        text-align: center;
+    }
+    #logo{
+    width: 90%;
+    height: 70vh;
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 0%;
+    position: relative;
+    top: 13vh;
+}
+    #nav{
+        display: none;
+    }
+    
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(999,999,999,1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#homeiconMobile{
+    background-image: url(images/home.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 5vh;
+    margin-bottom: 1vh;
+    margin-left: 5%;
+    
+}
+#mmdiconMobile{
+    background-image: url(images/mmd.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 5vh;
+    margin-bottom: 1vh;
+    margin-left: 5%;
+}
+#curriculumiconMobile{
+    background-image: url(images/curriculum.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 5vh;
+    margin-bottom: 1vh;
+    margin-left: 5%;
+}
+#scrollbutton{
+    
+    display: block;
+    width: 10%;
+    margin-left: 45%;
+    position: absolute;
+    top: 80vh;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vh;
+    transform: rotate(90deg);
+    transition: filter .2s linear;
+    animation: appearButton 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    
+}
+    @keyframes appearButton{
+    from{
+        top: 60vh;
+        opacity: 0;
+    }
+    to{
+        top: 75vh;
+        opacity: 1;
+    }
+}
+    #icons{
+        display: none;
+    }
+    #discoverMore{
+    display:block;
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px 0;
+    position: relative;
+    top: 1vh;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color:rgba(94,280,247,.5);
+    border-radius: 5px;
+}
+    #schoolLogos{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+    #scrollcontent #para{
+    padding-top: 2.5vh;
+    width: 80%;
+    margin-left: 10%;
+    height: 60vh;
+    font-size: 18px;
+}
+    #toTop{
+    padding: 1vh 0;
+    display: block;
+    width: 8%;
+    margin-left: 84%;
+    position: absolute;
+    top: 150vh;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vh;
+    transform: rotate(270deg);
+    transition: filter .2s linear;
+    filter: invert(1);
+}
+}

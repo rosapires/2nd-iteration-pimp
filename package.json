@@ -1,0 +1,23 @@
+{
+  "name": "2nd-iteration-pimp",
+  "version": "1.0.0",
+  "description": "I like apples!",
+  "main": "FetchGoogleJSON.js",
+  "dependencies": {
+    "material-components-web": "^0.20.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vallvien/2nd-iteration-pimp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vallvien/2nd-iteration-pimp/issues"
+  },
+  "homepage": "https://github.com/vallvien/2nd-iteration-pimp#readme"
+}

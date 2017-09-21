@@ -1,0 +1,205 @@
+{
+    "CoreAreas": {
+        "title": "Core Areas",
+        "intro": "The Academic Program in Multimedia design and Communication program focuses on four core areas:",
+        "image": "img/hash.png",
+        "table": "",
+        "subcategory": {
+            "business": {
+                "title": "Business",
+                "description": "It is intended to provide the student with the qualifications needed to incorporate organisational aspects into multimedia development and use, and to enable the student to plan, manage and carry out a development project.",
+                "ects": "",
+                "Knowledge": [
+                    "key topics within multimedia-related commercial law, including copyright, data protection law and contract law",
+                    "a company’s control, communication and decision-making processes",
+                    "the possible organisational consequences of implementing multimedia productions in an organisation",
+                    "key methods and tools related to financial planning and control of multimedia productions",
+                    "key innovation and entrepreneurship topics"
+                ],
+                "Skills": [
+                    "assess the vision, mission and values as well as the strategy and culture of organisations in relation to multimedia productions"
+                ],
+                "Competences": [
+                    "apply relevant theories, methods and IT tools for planning, control and quality assurance of development projects",
+                    "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
+                    "acquire new knowledge, skills and competencies of relevance to the profession"
+                ]
+            },
+            "communication": {
+                "title": "Communication and Presentation",
+                "description": "It is designed to contribute to the acquisition of the knowledge, skills and competencies needed to handle communication in relation to multimedia tasks. The student is able to handle communication channels and opportunities in complex organisations and networks, both locally and globally.",
+                "ects": "",
+                "Knowledge": [
+                    "key communication theory and method applied in the multimedia field",
+                    "key marketing theory and method applied in the multimedia field",
+                    "key applied communicative tools and techniques and genres",
+                    "key concepts in the field of media sociology (the use of digital media by different social groups, both historically and currently)"
+                ],
+                "Skills": [
+                    "collect and assess empirical data on target groups and situations",
+                    "apply key methods and tools to describe a target group in relation to multimedia tasks",
+                    "assess and produce communication aimed at selected target groups",
+                    "apply key methods and tools to build and assess information architecture, including struc-turing, planning and communicating information",
+                    "apply key methods and tools to plan and conduct user tests",
+                    "summarise and communicate a development project in the form of a report",
+                    "apply key methods and tools for stakeholder presentations",
+                    "assess and apply communication elements in various media productions",
+                    "assess the importance of cultural factors to national and international communication",
+                    "assess connections between cultural identity and forms of expression",
+                    "identify, select and present communication strategies and forms of communication for un-dertaking multimedia tasks in a globalised society"
+                ],
+                "Competences": [
+                    "handle communication and marketing across platforms",
+                    "handle digital marketing",
+                    "handle interactive communication in multimedia products",
+                    "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
+                    "acquire new knowledge, skills and competencies of relevance to the profession"
+                ]
+            },
+            "design": {
+                "title": "Design and Visualization",
+                "description": "It is designed to enable the student to apply multimedia design and concept development principles on a methodological basis. The student is also to acquire the skills needed to design and develop interactive user interfaces for key digital platforms on a methodological basis. In addition, the student is to be able to integrate different types of digital media on various digital platforms on a methodological basis.",
+                "ects": "",
+                "Knowledge": [
+                    "key tools for video and audio production",
+                    "key methods for documenting design",
+                    "the history of design and aesthetics in relation to the multimedia field",
+                    "the connection between application and design in the multimedia field",
+                    "key theory and method in relation to animation techniques",
+                    "key theory and method in relation to narrative and production techniques"
+                ],
+                "Skills": [
+                    "assess and apply key methods for ideation and concept development",
+                    "design user interfaces for different digital platforms based on key theory and assessment",
+                    "assess and apply key user-oriented design methods",
+                    "assess and apply key digital graphic design principles",
+                    "assess and apply aesthetic styles in relation to the multimedia field",
+                    "assess and prepare graphic material for further digital production",
+                    "present design-related problems and issues as well as possible solutions to stakeholders",
+                    "assess and apply methods for documenting interactive multimedia productions",
+                    "assess and apply techniques for the production and post-processing of video and audio",
+                    "present the choice of media mechanisms to stakeholders"
+                ],
+                "Competences": [
+                    "manage and realise the connection between message and design",
+                    "manage and realise the connection between identity and design",
+                    "manage the design and development of interactive user interfaces",
+                    "manage and integrate the expression of digital media on different digital platforms",
+                    "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
+                    "acquire new knowledge, skills and competencies of relevance to the profession"
+                ]
+            },
+            "intdev": {
+                "title": "Interaction Development",
+                "description": "It is designed to enable the student to model, format, structure, document and implement dynamic multimedia applications. The student is also to obtain a basic understanding of system development. Furthermore, the student is to acquire the skills needed to structure and implement complex dynamic multimedia applications with the integration of databases.",
+                "ects": "",
+                "Knowledge": [
+                    "the structure and use of the Internet",
+                    "object-oriented programming in relation to multimedia practice",
+                    "technical possibilities and limitations of development environments applied in practice",
+                    "elements of Content Management Systems (CMS) applied in practice",
+                    "key applied theory and method in relation to system development",
+                    "interfaces for exchanging data with third-party services",
+                    "important security aspects of networks, multimedia applications and data communication"
+                ],
+                "Skills": [
+                    "assess and apply key methods and tools for search engine optimisation (SEO)",
+                    "prepare and present documentation in accordance with practice",
+                    "assess and apply current formatting languages",
+                    "program client and server-based multimedia solutions",
+                    "apply key methods and tools for modelling, structuring and implementing functionality",
+                    "use a database manipulation language applied in practice",
+                    "apply key methods for modelling data and implementing databases",
+                    "apply key methods for assuring quality through testing and troubleshooting"
+                ],
+                "Competences": [
+                    "manage modelling, structuring and formatting of information in accordance with practice",
+                    "manage modelling, structuring and programming of functionality",
+                    "manage integration of different media types in multimedia applications",
+                    "handle data persistence for dynamic multimedia applications",
+                    "participate in disciplinary and interdisciplinary teams both internally and externally based on a professional approach",
+                    "acquire new knowledge, skills and competencies of relevance to the profession"
+                ]
+            }
+        }
+    },
+    "FirstYear": {
+        "title": "First Year",
+        "image": "img/pen.png",
+        "intro": "",
+        "table": "img/table_one.svg",
+        "subcategory": {
+            "port-ev": {
+                "image": "",
+                "title": "Prerequisites - portfolio evaluation",
+                "description": "The first-semester portfolio evaluation is a precondition for students being registered for the exam in the compulsory programme element in the second semester (first-year exam).At the end of the first semester, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assignments together with the teachers. This is registered in a portfolio. The internal evaluation of the portfolio and product presentation provides a framework for dialogue on the students’ learning and potential for development later in the programme."
+            },
+            "first-exam": {
+                "title": "First-year exam requirements",
+                "description": "The objective is to test the students’ understanding of the theory, method and tools acquired through participation in the compulsory programme element Multimedia Production Basic.",
+                "properties": [
+                    "The exam is to demonstrate that the student is able to:",
+                    "communicate visually to a target group",
+                    "develop an interactive digital product, taking into account the stakeholders",
+                    "carry out a project in a team"
+                ]
+            },
+            "project-work": {
+                "title": "Project work, product and report",
+                "description": "Project work must be interdisciplinary and problem-oriented, resulting in a functioning digital prototype and a report documenting the development work and the product. The project description sets out the requirements regarding group size, product scope and process documentation. It is made available to the students, examiner and co-examiner."
+            },
+            "submission": {
+                "title": "Submission",
+                "description": "Students must submit a functioning digital prototype and a project report. The report may not exceed 10 standard pages, plus 8 standard pages per group member. Front page, table of contents, bibliography and appendices are not included in the maximum number of pages. A standard page is 2,400 characters with spaces and footnotes. In connection with group reports, the individual student’s contribution must be clearly stated."
+            }
+        }
+    },
+     "SecondYear": {
+        "title": "Second Year",
+        "intro": "",
+        "image": "img/bulb.png",
+        "table": "img/table_two.svg",
+        "subcategory": {
+            "elective": {
+                "title": "2nd Year Exams content",
+                "name": "Requirements for elective subject exam",
+                "description": "The elective subject is concluded with a presentation and a discussion, either individually or in groups, of one or more products which the students have developed in connection with the elective subject. The requirements for the presentation and product(s) are made available on the learning platform for the Multimedia Design and Communication programme."
+            },
+            "thirdsem": {
+                "title": "Third-semester exam – compulsory element: Multimedia Production Advanced",
+                "name": "Third-semester exam requirements",
+                "description": "The objective is to test the students’ understanding of the theory, method and tools acquired through the compulsory programme element Multimedia Production Advanced, and the students’ ability to develop a professional profile in relation to the current requirements in the area. An exam assignment constitutes the basis for the exam: The specific requirements regarding the exam assignment are published on the learning platform for the Multimedia Design and Communication programme."
+            },
+            "internshipExam": {
+                "title": "Fourth-semester exam – internship",
+                "name": "Internship exam requirements",
+                "description": "The internship is concluded with an internship report, a presentation and a discussion of one or more products developed by the student during the internship, as well as of the professional experience gained by the student. The requirements for the report and presentation are described under the guidelines for fourth-semester internships."
+            },
+            "finalexam": {
+                "title": "Final exam project",
+                "name": "Requirements for the final project",
+                "description": "The objective of the final exam project is to document whether the student has acquired the qualifications needed to combine theoretical, methodological and practical elements and to communicate these. The problem statement must be central to the multimedia profession and be prepared by the student in cooperation with a public or private company. Alternatively, the final exam project can be based on the students starting up their own business. KEA must approve the problem statement. The project is concluded with a report and a product, which must be a digital multimedia production. The requirements for the report, presentation and product(s) are described in the fourth-semester guide for final projects, which is available on the learning platform for the Multimedia Design and Communication programme. The project description defines group size, the scope of the product(s) and process documentation as well as submission deadlines and requirements. The project description is made available to students, teachers and the co-examiner."
+            }
+        }
+    },
+     "StudyProgram": {
+        "title": "Study Program Overview",
+        "intro": "",
+        "image": "img/comp.png",
+        "table": "img/table4.svg",
+        "subcategory": {
+            "abrod": {
+                "title": "Study Abroad",
+                "description": "Having passed the first-year exam, students can choose to complete either the entire programme or parts of it abroad. KEA Copenhagen School of Design and Technology offers multiple possibilities for international study, including the fourth-semester internship. Information on partner institutions, international internships, credit transfer and procedures are published regularly by KEA. KEA may grant the transfer of programme elements or parts thereof according to this curriculum which are passed at another educational institution and which are equivalent to programme elements or parts thereof in this curriculum. If the programme element in question has been assessed according to the 7-point grading scale at the institution where the exam has been taken and is equivalent to a course in this curriculum, the grade may be transferred. KEA may grant the transfer of programme elements completed at another Danish or foreign institution of higher education to replace programme elements covered by this curriculum. If a credit transfer is granted, programme elements are deemed to have been completed if they have been passed in accordance with the rules applicable to the programme in question. The assessment is transferred as ‘passed’."
+            },
+            "internship": {
+                "title": " Internship",
+                "description": "The internship can form the basis of the student’s final project and can be organised in a flexible and differentiated manner. Students can choose to combine internships in two or more organisations or different types of internships. The conditions governing internships are described in more detail on the learning platform for the Multimedia Design and Communication programme before the fourth semester begins. The internship is unpaid. Based on the general learning objectives for the internship period, students develop their own individual learning objectives for their internship in cooperation with the host company and the institution. During the internship, students are assigned a supervisor from the programme and a contact/supervisor from the host organisation. The internship is concluded with an exam."
+            },
+            "rules": {
+                "title": "Exams schedule and rules",
+                "description": "The exams cover the core areas of the compulsory programme elements with focus on product, report and process. Each exam consists of a project and oral part and in accordance with the following elements: presentation, examination, grading and feedback. Exception: the elective exam form may vary depending on the objective of the elective subject in question. KEA holds a commencement of studies exam for the Multimedia Design and Communication programme. Students must pass the commencement of studies exam to continue on the programme. Students who have commenced a semester cannot withdraw from the exams scheduled for that semester. All programme elements are concluded with an exam, which is assessed according to the 7-point grading scale. To pass the exam, students must at least be awarded the grade 02. Students must pass the first-year exam before the end of the first year of study to be able to continue on the programme. All exams must be passed before students can take the final exam in the fourth semester."
+            }
+        }
+    }
+}
